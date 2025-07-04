@@ -1,5 +1,3 @@
-const cy = require('cypress');
-
 describe('Navigation Tests', () => {
   beforeEach(() => {
     cy.visit('/');

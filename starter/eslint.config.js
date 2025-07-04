@@ -11,6 +11,16 @@ export default [
                 ...globals.browser,
                 ...globals.node,
                 ...globals.mocha,
+                // Cypress globals otherwise shows errors
+                cy: "readonly",
+                Cypress: "readonly",
+                describe: "readonly",
+                it: "readonly",
+                beforeEach: "readonly",
+                afterEach: "readonly",
+                before: "readonly",
+                after: "readonly",
+                expect: "readonly",
             },
         },
         rules: {

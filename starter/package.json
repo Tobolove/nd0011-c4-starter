@@ -4,14 +4,17 @@
     "description": "my final project of the FEND",
     "type": "module",
     "scripts": {
+        "start": "parcel serve index.html",
+        "build": "parcel build index.html",
         "test": "mocha",
+        "cypress": "npx cypress run",
+        "cypress:open": "npx cypress open",
         "gulp": "gulp"
     },
     "author": "Tobias Frei",
     "license": "MIT",
     "devDependencies": {
         "@eslint/js": "^9.30.0",
-        "@parcel/optimizer-image": "^2.15.4",
         "chai": "^5.2.0",
         "cypress": "^14.5.1",
         "eslint": "^9.30.0",
@@ -21,11 +24,14 @@
         "gulp-shell": "^0.6.3",
         "imagemin-mozjpeg": "^10.0.0",
         "imagemin-pngquant": "^10.0.0",
-        "mocha": "^11.7.1",
-        "parcel": "^2.15.4"
+        "mocha": "^11.7.1"
     },
     "prettier": {
         "semi": true,
         "tabWidth": 4
+    },
+    "dependencies": {
+        "@parcel/optimizer-image": "^2.9.3",
+        "parcel": "^2.9.3"
     }
 }
